@@ -9,7 +9,7 @@ const {
 
 
 function mergeDiffedArrays() {
-  var inbound = this.get('content');
+  var inbound = this.get('content') || [];
   var outbound = this.get('__proxyContent');
   var keyForId = this.get('keyForId');
   var cache = this.get('__cache');
